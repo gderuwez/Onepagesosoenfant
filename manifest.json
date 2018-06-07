@@ -1,0 +1,21 @@
+{
+  "short_name": "SOSEnfant",
+  "name": "S.O.S. Enfants",
+  "icons": [
+  {
+    "src": "./assets/images/icon-192.png",
+    "type": "image/png",
+    "sizes": "192x192"
+  },
+  {
+    "src": "./assets/images/icon-512.png",
+    "type": "image/png",
+    "sizes": "512x512"
+  }
+],
+  "start_url": "/One_page_sosEnfant/index.html",
+  "display": "fullscreen",
+  "background_color": "#FFFADB",
+  "scope": "/One_page_sosEnfant/",
+  "theme_color": "#317EFB"
+}
