@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./libraries/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/CSS/style.css">
+  <link rel="stylesheet" href="./assets/CSS/style.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="manifest" href="./manifest.json">
   <title>Document</title>
@@ -35,7 +35,7 @@
             <a class="nav-link" href="#action">Actions</a>
           </li>
           <!-- Modify color to attract attention to donation button-->
-          <li class="nav-item btn-primary">
+          <li class="nav-item btn-primary don">
             <a class="nav-link dondon" href="#giving">Faire un don</a>
           </li>
           <li class="nav-item">
@@ -108,10 +108,11 @@
     </div>
     <!-- aides -->
     <span class="anchor" id="giving"></span>
-    <div class="container-fluid border-dark ">
-      <div class="row">
-        <div class=" col-12 col-md-6 mt-5">
-          <h3>PARRAINER un ENFANT, c’est lui permettre de bénéficier</h3>
+    <div class="container-fluid back1 pt-2">
+      <div class="row" >
+        <div class=" col-12 col-md-6 mt-5 colleft">
+          <h2>Parrainer un enfant</h2>
+          <p>Parrainer un enfant c’est lui permettre de bénéficier :</p>
 
           <ul>
             <li>d’une scolarité bien adaptée</li>
@@ -121,13 +122,12 @@
             <li>d’une formation à un métier</li>
           </ul>
 
-          <p>A partir de 10 euros par mois,
+          <p>À partir de 10 euros par mois,
           vous pouvez devenir acteur d’un projet humanitaire et offrir à un enfant les moyens de construire son avenir.</p>
 
-          <h4>REDUCTIONS FISCALES :</h4>
-          <p>Les sommes versées à SOS Enfants sont déductibles des impôts à hauteur de 75% de leur montant.</p>
-
           <form action="/action_page.php">
+
+            <div class="coche">
             <div class="form-check-inline">
               <label class="form-check-label">
                 <input type="checkbox" class="form-check-input" value="">M.
@@ -148,30 +148,32 @@
                 <input type="checkbox" class="form-check-input" value="">Mlle
               </label>
             </div>
+          </div>
+
 
             <div class="form-group">
-              <label for="Name">Nom:</label>
-              <input type="Nom" class="form-control" id="lastName">
+              <label for="lastName">Nom:</label>
+              <input type="text" class="form-control" id="lastName">
             </div>
             <div class="form-group">
-              <label for="First Name">Prénom:</label>
-              <input type="Prenom" class="form-control" id="FirstName">
+              <label for="FirstName">Prénom:</label>
+              <input type="text" class="form-control" id="FirstName">
             </div>
             <div class="form-group">
               <label for="adresse">adresse:</label>
-              <input type="adresse" class="form-control" id="adresse">
+              <input type="text" class="form-control" id="adresse">
             </div>
             <div class="form-group">
-              <label for="code postal">code postal:</label>
-              <input type="cp" class="form-control" id="cp">
+              <label for="cp">code postal:</label>
+              <input type="text" class="form-control" id="cp">
             </div>
             <div class="form-group">
-              <label for="ville">ville:</label>
-              <input type="ville" class="form-control" id="town">
+              <label for="town">ville:</label>
+              <input type="text" class="form-control" id="town">
             </div>
             <div class="form-group">
-              <label for="pays">pays:</label>
-              <input type="pays" class="form-control" id="country">
+              <label for="country">pays:</label>
+              <input type="text" class="form-control" id="country">
             </div>
             <div class="form-group">
               <label for="sel1">Je désire parrainer:</label>
@@ -219,12 +221,14 @@
                 <input type="text" class="form-check-input" value="">
               </label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary envoi">Envoyer</button>
           </form>
         </div>
-        <div class="col-12 col-md-6 mt-5">
+        <div class="col-12 col-md-6 mt-5 colright">
+          <h2>Faire un don</h2>
           <p>Si vous désirez participer à nos actions pour un développement durable en faveur de l'enfance dans le monde, remplissez et envoyez-nous cette PROMESSE DE DON.</p>
           <form action="/action_page.php">
+            <div class="coche">
             <div class="form-check-inline">
               <label class="form-check-label">
                 <input type="checkbox" class="form-check-input" value="">M.
@@ -245,30 +249,32 @@
                 <input type="checkbox" class="form-check-input" value="">Mlle
               </label>
             </div>
+            </div>
+
 
             <div class="form-group">
-              <label for="Name">Nom:</label>
-              <input type="Nom" class="form-control" id="lastName">
+              <label for="lastName2">Nom:</label>
+              <input type="text" class="form-control" id="lastName2">
             </div>
             <div class="form-group">
-              <label for="First Name">Prénom:</label>
-              <input type="Prenom" class="form-control" id="FirstName">
+              <label for="FirstName2">Prénom:</label>
+              <input type="text" class="form-control" id="FirstName2">
             </div>
             <div class="form-group">
-              <label for="adresse">adresse:</label>
-              <input type="adresse" class="form-control" id="adresse">
+              <label for="adresse2">adresse:</label>
+              <input type="text" class="form-control" id="adresse2">
             </div>
             <div class="form-group">
-              <label for="code postal">code postal:</label>
-              <input type="cp" class="form-control" id="cp">
+              <label for="cp2">code postal:</label>
+              <input type="text" class="form-control" id="cp2">
             </div>
             <div class="form-group">
-              <label for="ville">ville:</label>
-              <input type="ville" class="form-control" id="town">
+              <label for="town2">ville:</label>
+              <input type="text" class="form-control" id="town2">
             </div>
             <div class="form-group">
-              <label for="pays">pays:</label>
-              <input type="pays" class="form-control" id="country">
+              <label for="country2">pays:</label>
+              <input type="text" class="form-control" id="country2">
             </div>
             <p>Je désire faire une promesse de don de:</p>
             <div class="form-check-inline">
@@ -295,45 +301,61 @@
               <label class="form-check-label">
                 <input type="text" class="form-check-input" value="">
               </label>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
+            </div>
+            <button type="submit" class="btn btn-primary envoi">Envoyer</button>
+            </form>
+
+
+
       </div>
     </div>
+    <div class="row">
+      <div class="col-12">
+      <h3>REDUCTIONS FISCALES :</h3>
+      <p>Les sommes versées à SOS Enfants sont déductibles des impôts à hauteur de 75% de leur montant.</p>
+    </div>
+    </div>
+    </div>
     <!-- contact -->
+
     <span class="anchor" id="contact"></span>
-    <div class="container-fluid back1 mt-5">
+
+    <div class="container-fluid back2 pl-4">
       <div class="row">
         <div class="col-12">
-          <div class="row">
-            <a href="https://twitter.com/mobirise" target="_blank">
-              <i class="fab fa-twitter">Suivez nos actions sur Twitter</i>
-            </a>
-          </div>
-          <div class="row">
-            <a href="https://www.facebook.com/pages/Mobirise/1616226671953247" target="_blank">
-              <i class="fab fa-facebook-f">Suivez nous sur Facebook</i>
-            </a>
-          </div>
+
           <div class="row">
             <form class="form-horizontal">
                   <div class="form-group">
-                    <label for="exampleInputName2">Name</label>
+                    <h2>Contact</h2>
+                    <label for="exampleInputName2">Nom</label>
                       <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail2">Email</label>
                       <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
                   </div>
-                  <div class="form-group ">
-                    <label for="exampleInputText">Your Message</label>
-                     <textarea class="form-control" placeholder="Description"></textarea>
+
+                  <div class="form-group form-check-inline">
+                    <label for="exampleInputText">Votre Message :</label>
+                     <textarea id="exampleInputText" class="form-control" placeholder="Description"></textarea>
                   </div>
-                    <button type="submit" class="btn btn-default">Send Message</button>
+                    <button type="submit" class="btn btn-primary envoi">Envoyer</button>
+
+
               </form>
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="row pt-1 pb-1 justify-content-center">
+      <a href="https://twitter.com/sosenfants" target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.facebook.com/SOSENFAN/" target="_blank">
+        <i class="fab fa-facebook-f pl-4"></i>
+      </a>
     </div>
     </section>
 
@@ -343,7 +365,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <!-- <script src="./assets/scripts/script.js"> -->
+    <script src="./assets/scripts/script.min.js">
 
     </script>
     </body>
