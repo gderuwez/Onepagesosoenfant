@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#FFFADB">
+  <meta name="SOSEnfant" content="One page for SOS Enfant">
   <link rel="stylesheet" href="./libraries/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/CSS/style.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -21,7 +23,7 @@
 
 
       <!-- Toggler/collapsibe Button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <button aria-label="Collapsible menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -217,11 +219,11 @@
               </label>
             </div>
             <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="text" class="form-check-input" value="">
+              <label class="form-check-label" for="Other_value">
+                <input type="text" class="form-check-input" value="" id="Other_value">
               </label>
             </div>
-            <button type="submit" class="btn btn-primary envoi">Envoyer</button>
+            <button aria-label="Submit button for parainage" type="submit" class="btn btn-primary envoi">Envoyer</button>
           </form>
         </div>
         <div class="col-12 col-md-6 mt-5 colright">
@@ -298,11 +300,11 @@
               </label>
             </div>
             <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="text" class="form-check-input" value="">
+              <label class="form-check-label" for="Other_donation">
+                <input type="text" class="form-check-input" value="" id="Other_donation">
               </label>
             </div>
-            <button type="submit" class="btn btn-primary envoi">Envoyer</button>
+            <button aria-label="submit button for donations" type="submit" class="btn btn-primary envoi">Envoyer</button>
             </form>
 
 
@@ -340,9 +342,7 @@
                     <label for="exampleInputText">Votre Message :</label>
                      <textarea id="exampleInputText" class="form-control" placeholder="Description"></textarea>
                   </div>
-                    <button type="submit" class="btn btn-primary envoi">Envoyer</button>
-
-
+                    <button aria-label="submit button for contact" type="submit" class="btn btn-primary envoi">Envoyer</button>
               </form>
           </div>
         </div>
@@ -351,10 +351,10 @@
 
     <div class="row pt-1 pb-1 justify-content-center">
       <a href="https://twitter.com/sosenfants" target="_blank">
-        <i class="fab fa-twitter"></i>
+        <i class="fab fa-twitter" alt="icone twitter"></i>
       </a>
       <a href="https://www.facebook.com/SOSENFAN/" target="_blank">
-        <i class="fab fa-facebook-f pl-4"></i>
+        <i class="fab fa-facebook-f pl-4" alt="icone facebook"></i>
       </a>
     </div>
     </section>
