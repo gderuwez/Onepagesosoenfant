@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["README.md","b7cdcbace762096b26a0a0bd80c7adb9"],["assets/CSS/style.css","e343051283fdb42d30deb023cbac970a"],["assets/images/icon-192.png","37a0825090037c1d52961796d6103131"],["assets/images/icon-512.png","80b8750a372c1569476457634b2fc207"],["assets/images/jumbo1.png","756f7ee400e5a66a2ce9e3607ac2e364"],["assets/images/logo_sos.png","a72d8c90eba8535bc408028740dcfe31"],["assets/images/picto_actions.png","68cc9965e8ea415a3a1fc6817fe4e455"],["assets/images/picto_présentation.png","a9fec689e43bdd04814e3521220c7e92"],["assets/images/placeholder.txt","d41d8cd98f00b204e9800998ecf8427e"],["assets/images/sos-enfants.png","f973f242c372bd7f5c67ed62a8b4858a"],["assets/scripts/script.js","c3ec88c7cc0f646a6489780412f6a48b"],["index.html","74f3ce6e9685b4a702f2ce6e4b3aaf5d"],["libraries/bootstrap.min.css","e59aa29ac4a3d18d092f6ba813ae1997"],["libraries/bootstrap.min.js","85636d56f74c4c11d1abecae2051c1e4"],["libraries/jquery-3.3.1.min.js","378087a64e1394fc51f300bb9c11878c"],["libraries/popper.min.js","af26339a60a5d543a01a128fd0418f83"],["manifest.json","e10b8f893befc589a0504b87fe1d9caf"]];
+var precacheConfig = [["README.md","99c4702734b8fe3148f4c4bf1c7cbc12"],["assets/CSS/style.css","5fb0a1ed4ee6447706270521b720290f"],["assets/images/icon-192.png","37a0825090037c1d52961796d6103131"],["assets/images/icon-512.png","80b8750a372c1569476457634b2fc207"],["assets/images/jumbo1.png","756f7ee400e5a66a2ce9e3607ac2e364"],["assets/images/logo_sos.png","a72d8c90eba8535bc408028740dcfe31"],["assets/images/picto_actions.png","68cc9965e8ea415a3a1fc6817fe4e455"],["assets/images/picto_présentation.png","a9fec689e43bdd04814e3521220c7e92"],["assets/images/placeholder.txt","d41d8cd98f00b204e9800998ecf8427e"],["assets/images/sos-enfants.png","f973f242c372bd7f5c67ed62a8b4858a"],["assets/scripts/script.js","e8a88876b16dd1e18fc5fb244e4b07b5"],["index.html","55390ec6d8ac85cf0086af130d0655bf"],["libraries/bootstrap.min.css","a7022c6fa83d91db67738d6e3cd3252d"],["libraries/bootstrap.min.js","eb5fac582a82f296aeb74900b01a2fa3"],["libraries/jquery-3.3.1.min.js","a09e13ee94d51c524b7e2a728c7d4039"],["libraries/popper.min.js","83fb8c4d9199dce0224da0206423106f"],["manifest.json","97ded2a075d31428f6ba676028e0f298"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
@@ -45,7 +45,7 @@ var ignoreUrlParametersMatching = [/^utm_/];
 
 
 
-var addDirectoryIndex = function (originalUrl, index) {
+var addDirectoryIndex = function(originalUrl, index) {
     var url = new URL(originalUrl);
     if (url.pathname.slice(-1) === '/') {
       url.pathname += index;
@@ -53,7 +53,7 @@ var addDirectoryIndex = function (originalUrl, index) {
     return url.toString();
   };
 
-var cleanResponse = function (originalResponse) {
+var cleanResponse = function(originalResponse) {
     // If this is not a redirected response, then we don't have to do anything.
     if (!originalResponse.redirected) {
       return Promise.resolve(originalResponse);
@@ -75,7 +75,7 @@ var cleanResponse = function (originalResponse) {
     });
   };
 
-var createCacheKey = function (originalUrl, paramName, paramValue,
+var createCacheKey = function(originalUrl, paramName, paramValue,
                            dontCacheBustUrlsMatching) {
     // Create a new URL object to avoid modifying originalUrl.
     var url = new URL(originalUrl);
@@ -91,7 +91,7 @@ var createCacheKey = function (originalUrl, paramName, paramValue,
     return url.toString();
   };
 
-var isPathWhitelisted = function (whitelist, absoluteUrlString) {
+var isPathWhitelisted = function(whitelist, absoluteUrlString) {
     // If the whitelist is empty, then consider all URLs to be whitelisted.
     if (whitelist.length === 0) {
       return true;
@@ -104,7 +104,7 @@ var isPathWhitelisted = function (whitelist, absoluteUrlString) {
     });
   };
 
-var stripIgnoredUrlParameters = function (originalUrl,
+var stripIgnoredUrlParameters = function(originalUrl,
     ignoreUrlParametersMatching) {
     var url = new URL(originalUrl);
     // Remove the hash; see https://github.com/GoogleChrome/sw-precache/issues/290
