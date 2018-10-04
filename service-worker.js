@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["README.md","99c4702734b8fe3148f4c4bf1c7cbc12"],["assets/CSS/style.min.css","e8623c3d532ce74d83f2c386d3710b56"],["assets/images/icon-192.png","37a0825090037c1d52961796d6103131"],["assets/images/icon-512.png","80b8750a372c1569476457634b2fc207"],["assets/images/jumbo1.jpf","8f31ea499ae4b1ce7694fbc99c9a54f1"],["assets/images/jumbo1.jpg","c35a19797910b04065447e35627b9c2d"],["assets/images/logo_sos.png","a72d8c90eba8535bc408028740dcfe31"],["assets/images/picto_actions.png","68cc9965e8ea415a3a1fc6817fe4e455"],["assets/images/picto_présentation.png","a9fec689e43bdd04814e3521220c7e92"],["assets/images/placeholder.txt","d41d8cd98f00b204e9800998ecf8427e"],["assets/images/sos-enfants.png","f973f242c372bd7f5c67ed62a8b4858a"],["assets/scripts/script.min.js","102c420818b6d8bc9fef102dfbcbadd1"],["index.html","545aef091d90b9f3138c35f34d1af248"],["libraries/bootstrap.min.css","a7022c6fa83d91db67738d6e3cd3252d"],["manifest.json","033f6bb2bb1ab5a92d807a9b1571ee85"]];
+var precacheConfig = [["README.md","b7cdcbace762096b26a0a0bd80c7adb9"],["assets/CSS/style.min.css","22f25c3e65e1a6fc6b798bb476eff2a1"],["assets/images/icon-192.png","37a0825090037c1d52961796d6103131"],["assets/images/icon-512.png","80b8750a372c1569476457634b2fc207"],["assets/images/jumbo1.jpf","8f31ea499ae4b1ce7694fbc99c9a54f1"],["assets/images/jumbo1.jpg","c35a19797910b04065447e35627b9c2d"],["assets/images/logo_sos.png","a72d8c90eba8535bc408028740dcfe31"],["assets/images/picto_actions.png","68cc9965e8ea415a3a1fc6817fe4e455"],["assets/images/picto_présentation.png","a9fec689e43bdd04814e3521220c7e92"],["assets/images/placeholder.txt","d41d8cd98f00b204e9800998ecf8427e"],["assets/images/sos-enfants.png","f973f242c372bd7f5c67ed62a8b4858a"],["assets/scripts/script.min.js","102c420818b6d8bc9fef102dfbcbadd1"],["index.html","3199f03e90386812e2a9de41a7b0b062"],["libraries/bootstrap.min.css","e59aa29ac4a3d18d092f6ba813ae1997"],["manifest.json","c88acc702bc179dde30c102e17db1058"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
@@ -45,7 +45,7 @@ var ignoreUrlParametersMatching = [/^utm_/];
 
 
 
-var addDirectoryIndex = function(originalUrl, index) {
+var addDirectoryIndex = function (originalUrl, index) {
     var url = new URL(originalUrl);
     if (url.pathname.slice(-1) === '/') {
       url.pathname += index;
@@ -53,7 +53,7 @@ var addDirectoryIndex = function(originalUrl, index) {
     return url.toString();
   };
 
-var cleanResponse = function(originalResponse) {
+var cleanResponse = function (originalResponse) {
     // If this is not a redirected response, then we don't have to do anything.
     if (!originalResponse.redirected) {
       return Promise.resolve(originalResponse);
@@ -75,7 +75,7 @@ var cleanResponse = function(originalResponse) {
     });
   };
 
-var createCacheKey = function(originalUrl, paramName, paramValue,
+var createCacheKey = function (originalUrl, paramName, paramValue,
                            dontCacheBustUrlsMatching) {
     // Create a new URL object to avoid modifying originalUrl.
     var url = new URL(originalUrl);
@@ -91,7 +91,7 @@ var createCacheKey = function(originalUrl, paramName, paramValue,
     return url.toString();
   };
 
-var isPathWhitelisted = function(whitelist, absoluteUrlString) {
+var isPathWhitelisted = function (whitelist, absoluteUrlString) {
     // If the whitelist is empty, then consider all URLs to be whitelisted.
     if (whitelist.length === 0) {
       return true;
@@ -104,7 +104,7 @@ var isPathWhitelisted = function(whitelist, absoluteUrlString) {
     });
   };
 
-var stripIgnoredUrlParameters = function(originalUrl,
+var stripIgnoredUrlParameters = function (originalUrl,
     ignoreUrlParametersMatching) {
     var url = new URL(originalUrl);
     // Remove the hash; see https://github.com/GoogleChrome/sw-precache/issues/290
