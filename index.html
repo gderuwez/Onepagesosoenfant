@@ -1,372 +1,314 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#FFFADB">
-  <meta name="Description" content="One page for SOS Enfant">
-  <link rel="stylesheet" href="./libraries/bootstrap.min.css">
-  <link rel="stylesheet" href="./assets/CSS/style.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="manifest" href="./manifest.json">
-  <title>SOSEnfant</title>
-</head>
-
-
-<body class="pt-5">
-  <header>
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top navhaut">
-      <!-- Brand -->
-      <a class="navbar-brand" href="#" id="anim"><img src="./assets/images/logo_sos.png" alt="Logo" style="width:160px;"> </a>
-
-
-
-      <!-- Toggler/collapsibe Button -->
-      <button aria-label="Collapsible menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#intro">Présentation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#action">Actions</a>
-          </li>
-          <!-- Modify color to attract attention to donation button-->
-          <li class="nav-item btn-primary don">
-            <a class="nav-link dondon" href="#giving">Faire un don</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <section>
-    <div class="jumbotron jumbotron-fluid bg-image">
-      <div class="container">
-        <h1>S.O.S. ENFANTS</h1>
-      <p> Aider sans assister</p>
-
-      </div>
-    </div>
-    <!-- presentation -->
-    <span class="anchor" id="intro"></span>
-    <div class="container-fluid back1">
-      <div class="row">
-        <div class="col-sm-3 d-none d-sm-block">
-          <img class="picto_presentation"   src="./assets/images/picto_présentation.png" alt="Présentation">
-        </div>
-        <div class="col-12 col-sm-9">
-          <h2>Association d'aide à l'enfance en détresse</h2>
-          <p>Notre BUT : Rendre ESPOIR et DIGNITE à chaque personne qu'ils aideront, sans limitation de frontières, la priorité étant donnée aux Enfants.</p>
-          <p>Notre DETERMINATION : S'attaquer aux CAUSES MEMES de la misère profonde et non pas seulement à ses effets.
-          Rompre la fatalité de cette misère en permettant à chacun de devenir ACTEUR de son propre développement et RESPONSABLE de son avenir.</p>
-          <p>Nos ACTIONS : Pour rendre plus efficace l'aide qu'elle apporte à l'enfance en détresse, SOS Enfants agit dans les domaines aussi bien de l’éducation, de la formation et de la santé que du développement et de l'environnement.
-          Notre DEVISE : Aider Sans Assister.</p>
-        </div>
-      </div>
-    </div>
-    <!-- actions -->
-    <span class="anchor" id="action"></span>
-    <div class="container-fluid back2">
-      <div class="row">
-        <div class="col-sm-3 d-none d-sm-block">
-          <img class="picto_action"   src="./assets/images/picto_actions.png" alt="Présentation">
-        </div>
-        <div class="col-12 col-sm-9">
-          <h2>Education</h2>
-          <p>Nous soutenons des programmes d'éducation et créons des écolespour favoriser la scolarisation des enfants les plus vulnérables dans le monde.</p>
-
-          <h2>Formation</h2>
-
-          <p>Nous sommes engagés dans la création et le soutien de centres d’apprentissage et de formation professionnelle adaptés à l’environnement et propices à la réinsertion sociale des plus vulnérables.</p>
-
-          <h2>Développement</h2>
-
-          <p>Nous soutenons dans le monde des programmes de développement générateurs de revenus débouchant sur une gestion autonome
-          et répondant aux conclusions du Sommet de la Terre de Rio en 1992 et des Objectifs du Millénaire pur le Developpementprécisés dans la Déclaration du Millénaire de septembre 2000.</p>
-
-          <h2>Etat civil</h2>
-
-          <p>L’enregistrement de son acte de naissance à l'état civil est un droit naturel pour chaque enfant. Quand ce droit n'est pas respecté, l'enfant se trouve privé de toute identité.</p>
-
-          <p>Et un enfant privé d’identité, c’est un enfant privé de ses droits les plus élémentaires, comme l’accès à l’éducation et à la santé.
-          Mais c’est aussi un enfant exposé à toutes formes d'abus et d’exploitations.</p>
-
-          <p>C’est pourquoi SOS Enfants, avec le soutien de la Fédération La Voix de l'Enfant, s'attache à restaurer dans ce droit fondamental tous les enfants qui en sont exclus.</p>
-
-          <h2>Santé</h2>
-
-          <p>SOS Enfants s'engage dans des actions de santé publique et de renutrition en faveur des populations les plus défavorisées.</p>
-
-        </div>
-      </div>
-    </div>
-    <!-- aides -->
-    <span class="anchor" id="giving"></span>
-    <div class="container-fluid back1 pt-2">
-      <div class="row" >
-        <div class=" col-12 col-md-6 mt-5 colleft">
-          <h2>Parrainer un enfant</h2>
-          <p>Parrainer un enfant c’est lui permettre de bénéficier :</p>
-
-          <ul>
-            <li>d’une scolarité bien adaptée</li>
-            <li>d’une alimentation saine et régulière</li>
-            <li>d’un suivi médical</li>
-            <li>de soins attentifs</li>
-            <li>d’une formation à un métier</li>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#FFFADB">
+    <meta name="Description" content="One page for SOS Enfant">
+    <link rel="stylesheet" href="./libraries/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/CSS/style.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="manifest" href="./manifest.json">
+    <title>SOSEnfant</title>
+  </head>
+  <body class="pt-5">
+    <header>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top navhaut">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#" id="anim"><img src="./assets/images/logo_sos.png" alt="Logo" style="width:160px;"> </a>
+        <!-- Toggler/collapsibe Button -->
+        <button aria-label="Collapsible menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#intro">Présentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#action">Actions</a>
+            </li>
+            <!-- Modify color to attract attention to donation button-->
+            <li class="nav-item btn-primary don">
+              <a class="nav-link dondon" href="#giving">Faire un don</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
           </ul>
-
-          <p>À partir de 10 euros par mois,
-          vous pouvez devenir acteur d’un projet humanitaire et offrir à un enfant les moyens de construire son avenir.</p>
-
-          <form action="/action_page.php">
-
-            <div class="coche">
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">M.
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">M.Mme
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">Mme
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">Mlle
-              </label>
-            </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="jumbotron jumbotron-fluid bg-image">
+        <div class="container">
+          <h1>S.O.S. ENFANTS</h1>
+          <p> Aider sans assister</p>
+        </div>
+      </div>
+      <!-- presentation -->
+      <span class="anchor" id="intro"></span>
+      <div class="container-fluid back1">
+        <div class="row">
+          <div class="col-sm-3 d-none d-sm-block">
+            <img class="picto_presentation" src="./assets/images/picto_présentation.png" alt="Présentation">
           </div>
-
-
-            <div class="form-group">
-              <label for="lastName">Nom:</label>
-              <input type="text" class="form-control" id="lastName">
-            </div>
-            <div class="form-group">
-              <label for="FirstName">Prénom:</label>
-              <input type="text" class="form-control" id="FirstName">
-            </div>
-            <div class="form-group">
-              <label for="adresse">adresse:</label>
-              <input type="text" class="form-control" id="adresse">
-            </div>
-            <div class="form-group">
-              <label for="cp">code postal:</label>
-              <input type="text" class="form-control" id="cp">
-            </div>
-            <div class="form-group">
-              <label for="town">ville:</label>
-              <input type="text" class="form-control" id="town">
-            </div>
-            <div class="form-group">
-              <label for="country">pays:</label>
-              <input type="text" class="form-control" id="country">
-            </div>
-            <div class="form-group">
-              <label for="sel1">Je désire parrainer:</label>
-              <select class="form-control" id="sel1">
-                <option>Je vous laisse le soin de choisir pour moi</option>
-                <option>Un orphelin d'Afrique</option>
-                <option>Un orphelin au Congo</option>
-                <option>Un enfant de l'Ecole de Guiè au Burkina-Faso</option>
-                <option>Les enfants de l'Ecole St-Alphonse en Haïti</option>
-                <option>Les Orphelinats Filles de Marie à Madagascar</option>
-                <option>Les enfants d'Akany Aïna à Madagascar</option>
-                <option>Une classe de l'Ecole de Panzang au Népal</option>
-                <option>Un enfant des rues au Rwanda</option>
-                <option>Un orphelin du sida au Rwanda</option>
-                <option>Un enfant Pygmée du FONDAF au Cameroun</option>
-                <option>Les enfants de la rue du rond-point Ngaba à Kinshasa</option>
-                <option>Un collégien en Haïti, parrainage privilégié</option>
-                <option>Un collégien au Rwanda, parrainage privilégié</option>
-                <option>Un collégien du Sahel, parrainage privilégié</option>
-                <option>Les enfants soldats démobilisés au Congo</option>
-              </select>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">10 &euro;
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">15 &euro;
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">30 &euro;
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">autres
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label" for="Other_value">
+          <div class="col-12 col-sm-9">
+            <h2>Association d'aide à l'enfance en détresse</h2>
+            <p>Notre BUT : Rendre ESPOIR et DIGNITE à chaque personne qu'ils aideront, sans limitation de frontières, la priorité étant donnée aux Enfants.</p>
+            <p>Notre DETERMINATION : S'attaquer aux CAUSES MEMES de la misère profonde et non pas seulement à ses effets.
+            Rompre la fatalité de cette misère en permettant à chacun de devenir ACTEUR de son propre développement et RESPONSABLE de son avenir.</p>
+            <p>Nos ACTIONS : Pour rendre plus efficace l'aide qu'elle apporte à l'enfance en détresse, SOS Enfants agit dans les domaines aussi bien de l’éducation, de la formation et de la santé que du développement et de l'environnement.
+            Notre DEVISE : Aider Sans Assister.</p>
+          </div>
+        </div>
+      </div>
+      <!-- actions -->
+      <span class="anchor" id="action"></span>
+      <div class="container-fluid back2">
+        <div class="row">
+          <div class="col-sm-3 d-none d-sm-block">
+            <img class="picto_action" src="./assets/images/picto_actions.png" alt="Présentation">
+          </div>
+          <div class="col-12 col-sm-9">
+            <h2>Education</h2>
+            <p>Nous soutenons des programmes d'éducation et créons des écolespour favoriser la scolarisation des enfants les plus vulnérables dans le monde.</p>
+            <h2>Formation</h2>
+            <p>Nous sommes engagés dans la création et le soutien de centres d’apprentissage et de formation professionnelle adaptés à l’environnement et propices à la réinsertion sociale des plus vulnérables.</p>
+            <h2>Développement</h2>
+            <p>Nous soutenons dans le monde des programmes de développement générateurs de revenus débouchant sur une gestion autonome et répondant aux conclusions du Sommet de la Terre de Rio en 1992 et des Objectifs du Millénaire pur le Developpementprécisés dans la Déclaration du Millénaire de septembre 2000.</p>
+            <h2>Etat civil</h2>
+            <p>L’enregistrement de son acte de naissance à l'état civil est un droit naturel pour chaque enfant. Quand ce droit n'est pas respecté, l'enfant se trouve privé de toute identité.</p>
+            <p>Et un enfant privé d’identité, c’est un enfant privé de ses droits les plus élémentaires, comme l’accès à l’éducation et à la santé. Mais c’est aussi un enfant exposé à toutes formes d'abus et d’exploitations.</p>
+            <p>C’est pourquoi SOS Enfants, avec le soutien de la Fédération La Voix de l'Enfant, s'attache à restaurer dans ce droit fondamental tous les enfants qui en sont exclus.</p>
+            <h2>Santé</h2>
+            <p>SOS Enfants s'engage dans des actions de santé publique et de renutrition en faveur des populations les plus défavorisées.</p>
+          </div>
+        </div>
+      </div>
+      <!-- aides -->
+      <span class="anchor" id="giving"></span>
+      <div class="container-fluid back1 pt-2">
+        <div class="row" >
+          <div class=" col-12 col-md-6 mt-5 colleft">
+            <h2>Parrainer un enfant</h2>
+            <p>Parrainer un enfant c’est lui permettre de bénéficier :</p>
+            <ul>
+              <li>d’une scolarité bien adaptée</li>
+              <li>d’une alimentation saine et régulière</li>
+              <li>d’un suivi médical</li>
+              <li>de soins attentifs</li>
+              <li>d’une formation à un métier</li>
+            </ul>
+            <p>À partir de 10 euros par mois, vous pouvez devenir acteur d’un projet humanitaire et offrir à un enfant les moyens de construire son avenir.</p>
+            <form action="/action_page.php">
+              <div class="coche">
+                <div class="form-check-inline">
+                  <label class="form-check-label">M.</label>
+                  <input type="checkbox" class="form-check-input" value="M">
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">M.Mme</label>
+                  <input type="checkbox" class="form-check-input" value="M.Mme">
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">Mme</label>
+                  <input type="checkbox" class="form-check-input" value="Mme">
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">Mlle</label>
+                  <input type="checkbox" class="form-check-input" value="Mlle">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Nom:</label>
+                <input type="text" class="form-control" id="lastName">
+              </div>
+              <div class="form-group">
+                <label for="FirstName">Prénom:</label>
+                <input type="text" class="form-control" id="FirstName">
+              </div>
+              <div class="form-group">
+                <label for="adresse">adresse:</label>
+                <input type="text" class="form-control" id="adresse">
+              </div>
+              <div class="form-group">
+                <label for="cp">code postal:</label>
+                <input type="text" class="form-control" id="cp">
+              </div>
+              <div class="form-group">
+                <label for="town">ville:</label>
+                <input type="text" class="form-control" id="town">
+              </div>
+              <div class="form-group">
+                <label for="country">pays:</label>
+                <input type="text" class="form-control" id="country">
+              </div>
+              <div class="form-group">
+                <label for="sel1">Je désire parrainer:</label>
+                <select class="form-control" id="sel1">
+                  <option>Je vous laisse le soin de choisir pour moi</option>
+                  <option>Un orphelin d'Afrique</option>
+                  <option>Un orphelin au Congo</option>
+                  <option>Un enfant de l'Ecole de Guiè au Burkina-Faso</option>
+                  <option>Les enfants de l'Ecole St-Alphonse en Haïti</option>
+                  <option>Les Orphelinats Filles de Marie à Madagascar</option>
+                  <option>Les enfants d'Akany Aïna à Madagascar</option>
+                  <option>Une classe de l'Ecole de Panzang au Népal</option>
+                  <option>Un enfant des rues au Rwanda</option>
+                  <option>Un orphelin du sida au Rwanda</option>
+                  <option>Un enfant Pygmée du FONDAF au Cameroun</option>
+                  <option>Les enfants de la rue du rond-point Ngaba à Kinshasa</option>
+                  <option>Un collégien en Haïti, parrainage privilégié</option>
+                  <option>Un collégien au Rwanda, parrainage privilégié</option>
+                  <option>Un collégien du Sahel, parrainage privilégié</option>
+                  <option>Les enfants soldats démobilisés au Congo</option>
+                </select>
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">10 &euro;</label>
+                <input type="checkbox" class="form-check-input" value="">
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">15 &euro;</label>
+                <input type="checkbox" class="form-check-input" value="">
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">30 &euro;</label>
+                <input type="checkbox" class="form-check-input" value="">
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">autres</label>
+                <input type="checkbox" class="form-check-input" value="">
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label" for="Other_value"></label>
                 <input type="text" class="form-check-input" value="" id="Other_value">
-              </label>
-            </div>
-            <button aria-label="Submit button for parainage" type="submit" class="btn btn-primary envoi">Envoyer</button>
-          </form>
-        </div>
-        <div class="col-12 col-md-6 mt-5 colright">
-          <h2>Faire un don</h2>
-          <p>Si vous désirez participer à nos actions pour un développement durable en faveur de l'enfance dans le monde, remplissez et envoyez-nous cette PROMESSE DE DON.</p>
-          <form action="/action_page.php">
-            <div class="coche">
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">M.
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">M.Mme
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">Mme
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">Mlle
-              </label>
-            </div>
-            </div>
-
-
-            <div class="form-group">
-              <label for="lastName2">Nom:</label>
-              <input type="text" class="form-control" id="lastName2">
-            </div>
-            <div class="form-group">
-              <label for="FirstName2">Prénom:</label>
-              <input type="text" class="form-control" id="FirstName2">
-            </div>
-            <div class="form-group">
-              <label for="adresse2">adresse:</label>
-              <input type="text" class="form-control" id="adresse2">
-            </div>
-            <div class="form-group">
-              <label for="cp2">code postal:</label>
-              <input type="text" class="form-control" id="cp2">
-            </div>
-            <div class="form-group">
-              <label for="town2">ville:</label>
-              <input type="text" class="form-control" id="town2">
-            </div>
-            <div class="form-group">
-              <label for="country2">pays:</label>
-              <input type="text" class="form-control" id="country2">
-            </div>
-            <p>Je désire faire une promesse de don de:</p>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">10 &euro;
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">15 &euro;
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">30 &euro;
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">autres
-              </label>
-            </div>
-            <div class="form-check-inline">
-              <label class="form-check-label" for="Other_donation">
-                <input type="text" class="form-check-input" value="" id="Other_donation">
-              </label>
-            </div>
-            <button aria-label="submit button for donations" type="submit" class="btn btn-primary envoi">Envoyer</button>
+              </div>
+              <button aria-label="Submit button for parainage" type="submit" class="btn btn-primary envoi">Envoyer</button>
             </form>
-
-
-
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-      <h3>REDUCTIONS FISCALES :</h3>
-      <p>Les sommes versées à SOS Enfants sont déductibles des impôts à hauteur de 75% de leur montant.</p>
-    </div>
-    </div>
-    </div>
-    <!-- contact -->
-
-    <span class="anchor" id="contact"></span>
-
-    <div class="container-fluid back2 pl-4">
-      <div class="row">
-        <div class="col-12">
-
-          <div class="row">
-            <form class="form-horizontal">
-                  <div class="form-group">
-                    <h2>Contact</h2>
-                    <label for="exampleInputName2">Nom</label>
-                      <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputEmail2">Email</label>
-                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-                  </div>
-
-                  <div class="form-group form-check-inline">
-                    <label for="exampleInputText">Votre Message :</label>
-                     <textarea id="exampleInputText" class="form-control" placeholder="Description"></textarea>
-                  </div>
-                    <button aria-label="submit button for contact" type="submit" class="btn btn-primary envoi">Envoyer</button>
-              </form>
+          </div>
+          <div class="col-12 col-md-6 mt-5 colright">
+            <h2>Faire un don</h2>
+            <p>Si vous désirez participer à nos actions pour un développement durable en faveur de l'enfance dans le monde, remplissez et envoyez-nous cette PROMESSE DE DON.</p>
+            <form action="/action_page.php">
+              <div class="coche">
+                <div class="form-check-inline">
+                  <label class="form-check-label">M.</label>
+                  <input type="checkbox" class="form-check-input" value="">
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">M.Mme</label>
+                  <input type="checkbox" class="form-check-input" value="">
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">Mme</label>
+                  <input type="checkbox" class="form-check-input" value="">
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">Mlle</label>
+                  <input type="checkbox" class="form-check-input" value="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="lastName2">Nom:</label>
+                <input type="text" class="form-control" id="lastName2">
+              </div>
+              <div class="form-group">
+                <label for="FirstName2">Prénom:</label>
+                <input type="text" class="form-control" id="FirstName2">
+              </div>
+              <div class="form-group">
+                <label for="adresse2">adresse:</label>
+                <input type="text" class="form-control" id="adresse2">
+              </div>
+              <div class="form-group">
+                <label for="cp2">code postal:</label>
+                <input type="text" class="form-control" id="cp2">
+              </div>
+              <div class="form-group">
+                <label for="town2">ville:</label>
+                <input type="text" class="form-control" id="town2">
+              </div>
+              <div class="form-group">
+                <label for="country2">pays:</label>
+                <input type="text" class="form-control" id="country2">
+              </div>
+              <p>Je désire faire une promesse de don de:</p>
+              <div class="form-check-inline">
+                <label class="form-check-label">10 &euro;</label>
+                <input type="checkbox" class="form-check-input" value="">
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">15 &euro;</label>
+                <input type="checkbox" class="form-check-input" value="">
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">30 &euro;</label>
+                <input type="checkbox" class="form-check-input" value="">
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">autres</label>
+                <input type="checkbox" class="form-check-input" value="">
+              </div>
+              <div class="form-check-inline">
+                <label class="form-check-label" for="Other_donation"></label>
+                <input type="text" class="form-check-input" value="" id="Other_donation">
+              </div>
+              <button aria-label="submit button for donations" type="submit" class="btn btn-primary envoi">Envoyer</button>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h3>REDUCTIONS FISCALES :</h3>
+            <p>Les sommes versées à SOS Enfants sont déductibles des impôts à hauteur de 75% de leur montant.</p>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="row pt-1 pb-1 justify-content-center">
-      <a href="https://twitter.com/sosenfants" target="_blank">
-        <i class="fab fa-twitter" alt="icone twitter"></i>
-      </a>
-      <a href="https://www.facebook.com/SOSENFAN/" target="_blank">
-        <i class="fab fa-facebook-f pl-4" alt="icone facebook"></i>
-      </a>
-    </div>
+      <!-- contact -->
+      <span class="anchor" id="contact"></span>
+      <div class="container-fluid back2 pl-4">
+        <div class="row">
+          <div class="col-12">
+            <div class="row">
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <h2>Contact</h2>
+                  <label for="exampleInputName2">Nom</label>
+                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail2">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                </div>
+                <div class="form-group form-check-inline">
+                  <label for="exampleInputText">Votre Message :</label>
+                  <textarea id="exampleInputText" class="form-control" placeholder="Description"></textarea>
+                </div>
+                <button aria-label="submit button for contact" type="submit" class="btn btn-primary envoi">Envoyer</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-1 pb-1 justify-content-center">
+        <a href="https://twitter.com/sosenfants" target="_blank" aria-label="lien twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/SOSENFAN/" target="_blank" aria-label="lien facebook">
+          <i class="fab fa-facebook-f pl-4"></i>
+        </a>
+      </div>
     </section>
-
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <script src="./assets/scripts/script.min.js">
-
-    </script>
-    </body>
-    </html>
+    <script src="./assets/scripts/script.min.js"></script>
+  </body>
+</html>
